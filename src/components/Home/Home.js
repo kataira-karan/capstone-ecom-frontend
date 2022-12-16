@@ -18,7 +18,6 @@ const Home = () => {
     e.preventDefault();
     const requestOptions = {
       crossDomain: true,
-      mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ searchtext: searchText, category: "" }),
