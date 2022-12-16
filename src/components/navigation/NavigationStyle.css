@@ -1,0 +1,50 @@
+.navigation-container{
+    height: 8vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100vw;
+
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.navigation-logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items:center  ;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.navigation-links{
+    width: 70%;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly ;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navigation-link{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 2rem;
+    transition: 0.8s all ease-in-out;
+    font-weight: bold;
+}
+
+/* .navigation-link:hover{
+    border-bottom-left-radius:2rem;
+    border-bottom-right-radius:2rem;
+    background-color: white;
+    color: black;
+    transition: 0.5s all ease-in-out;
+} */
