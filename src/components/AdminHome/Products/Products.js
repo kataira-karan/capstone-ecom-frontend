@@ -28,7 +28,7 @@ const Products = () => {
       body: JSON.stringify({ searchtext: "", category: "" }),
     };
     await fetch(
-      "https://localhost:7256/api/Product/GetProductData",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/GetProductData",
       requestOptions
     )
       .then((response) => {
@@ -54,7 +54,7 @@ const Products = () => {
         body: JSON.stringify({ id: product.id, name: product.name }),
       };
       await fetch(
-        "https://localhost:7256/api/Product/DeleteProduct",
+        "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/DeleteProduct",
         requestOptions
       )
         .then((response) => {
@@ -80,7 +80,7 @@ const Products = () => {
       headers: { "Content-Type": "application/json" },
     };
     await fetch(
-      "https://localhost:7256/api/Product/GetCategoryData",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/GetCategoryData",
       requestOptions
     )
       .then((response) => {
@@ -104,7 +104,10 @@ const Products = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newProduct),
     };
-    await fetch("https://localhost:7256/api/Product/AddProduct", requestOptions)
+    await fetch(
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/AddProduct",
+      requestOptions
+    )
       .then((response) => {
         console.log(response);
         return response.json();
@@ -155,7 +158,7 @@ const Products = () => {
       body: JSON.stringify(newProduct),
     };
     await fetch(
-      "https://localhost:7256/api/Product/UpdateProduct",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/UpdateProduct",
       requestOptions
     )
       .then((response) => {

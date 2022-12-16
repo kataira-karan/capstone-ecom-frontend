@@ -16,11 +16,15 @@ const LoginForm = (props) => {
 
     const requestOptions = {
       crossDomain: true,
+      mode: "cors",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
     };
-    await fetch(" ", requestOptions)
+    await fetch(
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/UserRegistration/loginUser",
+      requestOptions
+    )
       .then((response) => {
         console.log(response);
 

@@ -21,7 +21,7 @@ const Category = () => {
       headers: { "Content-Type": "application/json" },
     };
     await fetch(
-      "https://localhost:7256/api/Product/GetCategoryData",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/GetCategoryData",
       requestOptions
     )
       .then((response) => {
@@ -48,7 +48,7 @@ const Category = () => {
 
       console.log(category);
       await fetch(
-        "https://localhost:7256/api/Product/DeleteCategory",
+        "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/DeleteCategory",
         requestOptions
       )
         .then((response) => {
@@ -87,7 +87,7 @@ const Category = () => {
       body: JSON.stringify(newCategory),
     };
     await fetch(
-      "https://localhost:7256/api/Product/AddCategory",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/AddCategory",
       requestOptions
     )
       .then((response) => {
@@ -115,7 +115,7 @@ const Category = () => {
       body: JSON.stringify({ name: newCategory.name, id: updateCategoryId.id }),
     };
     await fetch(
-      "https://localhost:7256/api/Product/UpdateCategory",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/Product/UpdateCategory",
       requestOptions
     )
       .then((response) => {
