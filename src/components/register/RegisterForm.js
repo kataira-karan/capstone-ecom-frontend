@@ -29,7 +29,7 @@ export default function App(props) {
       body: JSON.stringify(user),
     };
     await fetch(
-      "https://localhost:7256/api/UserRegistration/registerUser",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/UserRegistration/registerUser",
       requestOptions
     )
       .then((response) => {

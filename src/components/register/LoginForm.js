@@ -22,7 +22,7 @@ const LoginForm = (props) => {
       body: JSON.stringify(user),
     };
     await fetch(
-      "https://localhost:7256/api/UserRegistration/loginUser",
+      "https://ecomcapstone20221214140957.azurewebsites.net/api/UserRegistration/loginUser",
       requestOptions
     )
       .then((response) => {
